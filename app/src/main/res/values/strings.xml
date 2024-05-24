@@ -1,6 +1,12 @@
 <resources>
     <string name="app_name">SaleApp</string>
+
+    <!-- Login -->
     <string name="email_label">Email</string>
     <string name="password_label">Password</string>
     <string name="login">Login</string>
+    <string name="welcome_back_login">Welcome back</string>
+    <string name="forgot_password_login">Forgot your password?</string>
+    <string name="without_account">¿Do you have an account? Register</string>
+
 </resources>
