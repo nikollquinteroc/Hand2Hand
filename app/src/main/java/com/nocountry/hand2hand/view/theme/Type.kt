@@ -1,4 +1,4 @@
-package com.example.saleapp.view.theme
+package com.nocountry.hand2hand.view.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

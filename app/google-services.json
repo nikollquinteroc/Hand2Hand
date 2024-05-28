@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "883100764833",
+    "firebase_url": "https://hand2hand-1142f-default-rtdb.firebaseio.com",
+    "project_id": "hand2hand-1142f",
+    "storage_bucket": "hand2hand-1142f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:883100764833:android:9efe7c493f8d30492e3ee0",
+        "android_client_info": {
+          "package_name": "com.nocountry.hand2hand"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiKzVupbFXCYOrZeg5w0pIH3SWh-FkFhI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

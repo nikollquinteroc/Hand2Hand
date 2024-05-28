@@ -1,4 +1,4 @@
-package com.example.saleapp
+package com.nocountry.hand2hand
 
 import org.junit.Test
 

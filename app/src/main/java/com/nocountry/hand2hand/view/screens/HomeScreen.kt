@@ -1,4 +1,4 @@
-package com.example.saleapp.view.screens
+package com.nocountry.hand2hand.view.screens
 
 import androidx.compose.runtime.Composable
 
