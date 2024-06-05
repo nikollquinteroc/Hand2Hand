@@ -1,4 +1,4 @@
-package com.nocountry.hand2hand.data
+package com.nocountry.hand2hand.model
 
 data class Location(
   var country: String,

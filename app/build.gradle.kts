@@ -78,7 +78,7 @@ dependencies {
 
     //dependencias firebase
     // Import the Firebase BoM
-    implementation(platform("com.google.firebase:firebase-bom:33.0.0"))
+    implementation(platform("com.google.firebase:firebase-bom:32.7.1"))
 
 
     // TODO: Add the dependencies for Firebase products you want to use
@@ -89,6 +89,8 @@ dependencies {
     // Add the dependencies for any other desired Firebase products
     implementation("com.google.firebase:firebase-database-ktx:20.2.2")
     implementation("com.google.firebase:firebase-auth-ktx:22.1.2")
+    implementation("com.google.firebase:firebase-storage-ktx")
+//    implementation("com.google.firebase:firebase-appcheck-debug")
 
 
 }

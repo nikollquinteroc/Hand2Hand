@@ -2,6 +2,7 @@ package com.nocountry.hand2hand.view.screens
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -164,7 +165,8 @@ fun LoginScreen(navigation: NavHostController) {
                         maxLines = 1
                     )
                 }
-                Text(text = stringResource(id = R.string.without_account))
+                Text(text = stringResource(id = R.string.without_account),
+                    modifier = Modifier.clickable { navigation.navigate(MainDestinations.REGISTER_ROUTE) })
             }
         }
 

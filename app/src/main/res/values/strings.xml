@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SaleApp</string>
+    <string name="app_name">Hand2Hand</string>
 
     <!--Bottom Navigation Bar-->
     <string name="home_bar">Home</string>

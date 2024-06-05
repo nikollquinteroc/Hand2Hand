@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "SaleApp"
+rootProject.name = "Hand2Hand"
 include(":app")
  
