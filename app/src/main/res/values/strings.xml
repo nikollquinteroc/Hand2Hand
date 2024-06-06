@@ -3,8 +3,8 @@
 
     <!--Bottom Navigation Bar-->
     <string name="home_bar">Home</string>
-    <string name="search_bar">Search</string>
-    <string name="buying_bar">Buying</string>
-    <string name="selling_bar">Selling</string>
-    <string name="account_bar">Account</string>
+    <string name="auction_bar">Subasta</string>
+    <string name="selling_bar">Vender</string>
+    <string name="messages_bar">Mensajes</string>
+    <string name="account_bar">Perfil</string>
 </resources>
