@@ -1,14 +1,15 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+    alias(libs.plugins.googleService)
 }
 
 android {
-    namespace = "com.example.saleapp"
+    namespace = "com.nocountry.hand2hand"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.saleapp"
+        applicationId = "com.nocountry.hand2hand"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -62,6 +63,10 @@ dependencies {
 
     //Extended icons
     implementation(libs.androidx.compose.material)
+
+    //Firebase
+    implementation(platform(libs.firebase.bom))
+    implementation(libs.google.firebase.firestore)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

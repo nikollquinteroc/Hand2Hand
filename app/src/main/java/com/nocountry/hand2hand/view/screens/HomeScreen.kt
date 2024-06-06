@@ -1,4 +1,4 @@
-package com.example.saleapp.view.screens
+package com.nocountry.hand2hand.view.screens
 
 import androidx.compose.animation.core.LinearEasing
 import androidx.compose.animation.core.RepeatMode
@@ -65,13 +65,13 @@ import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.saleapp.R
-import com.example.saleapp.model.CardRepository
-import com.example.saleapp.model.SectionRepository
-import com.example.saleapp.model.cards
-import com.example.saleapp.model.categories
-import com.example.saleapp.model.sections
-import com.example.saleapp.view.components.BottomNavigationBar
+import com.nocountry.hand2hand.R
+import com.nocountry.hand2hand.model.CardRepository
+import com.nocountry.hand2hand.model.SectionRepository
+import com.nocountry.hand2hand.model.cards
+import com.nocountry.hand2hand.model.categories
+import com.nocountry.hand2hand.model.sections
+import com.nocountry.hand2hand.view.components.BottomNavigationBar
 import kotlinx.coroutines.delay
 
 @OptIn(ExperimentalMaterial3Api::class)

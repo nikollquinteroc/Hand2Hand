@@ -1,4 +1,4 @@
-package com.example.saleapp.view
+package com.nocountry.hand2hand.view
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -7,10 +7,13 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
-import com.example.saleapp.view.screens.HomeScreen
-import com.example.saleapp.view.theme.SaleAppTheme
+import com.google.firebase.Firebase
+import com.google.firebase.firestore.firestore
+import com.nocountry.hand2hand.view.screens.HomeScreen
+import com.nocountry.hand2hand.view.theme.SaleAppTheme
 
 class MainActivity : ComponentActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {

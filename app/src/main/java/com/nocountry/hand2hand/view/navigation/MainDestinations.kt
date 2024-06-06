@@ -1,4 +1,4 @@
-package com.example.saleapp.view.navigation
+package com.nocountry.hand2hand.view.navigation
 
 object MainDestinations {
     const val LOGIN_ROUTE = "login"

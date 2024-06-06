@@ -1,14 +1,6 @@
-package com.example.saleapp.model
+package com.nocountry.hand2hand.model
 
-import androidx.annotation.DrawableRes
-import androidx.compose.foundation.Image
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Book
-import androidx.compose.material.icons.filled.Chair
-import androidx.compose.material.icons.filled.DevicesOther
-import androidx.compose.ui.graphics.vector.ImageVector
-import androidx.compose.ui.res.painterResource
-import com.example.saleapp.R
+import com.nocountry.hand2hand.R
 
 data class CategoryRepository(
     val icon: Int,

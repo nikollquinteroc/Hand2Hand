@@ -1,4 +1,4 @@
-package com.example.saleapp
+package com.nocountry.hand2hand
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

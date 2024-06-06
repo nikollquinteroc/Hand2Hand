@@ -1,4 +1,4 @@
-package com.example.saleapp.view.components
+package com.nocountry.hand2hand.view.components
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -25,8 +25,8 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.saleapp.R
-import com.example.saleapp.view.navigation.MainDestinations
+import com.nocountry.hand2hand.R
+import com.nocountry.hand2hand.view.navigation.MainDestinations
 
 @Composable
 fun BottomNavigationBar(
