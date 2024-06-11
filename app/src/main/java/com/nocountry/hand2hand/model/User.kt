@@ -1,7 +1,5 @@
 package com.nocountry.hand2hand.model
 
-import java.util.Date
-
 data class User (
     var name: String,
     var lastName: String,

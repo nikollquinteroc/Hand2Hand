@@ -14,9 +14,12 @@ import com.google.firebase.appcheck.FirebaseAppCheck
 import com.google.firebase.appcheck.ktx.appCheck
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.ktx.initialize
+import com.nocountry.hand2hand.model.SubCategory
 import com.nocountry.hand2hand.prueba.PruebaScreen
 import com.nocountry.hand2hand.view.navigation.Navigation
+import com.nocountry.hand2hand.view.screens.CategoriaScreen
 import com.nocountry.hand2hand.view.screens.RegisterScreen
+import com.nocountry.hand2hand.view.screens.SubcategoriaScreen
 import com.nocountry.hand2hand.view.theme.SaleAppTheme
 
 class MainActivity : ComponentActivity() {
@@ -30,7 +33,8 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Navigation(this)
+                    //SubcategoriaScreen(rememberNavController())
+                   Navigation(this)
                 }
             }
         }

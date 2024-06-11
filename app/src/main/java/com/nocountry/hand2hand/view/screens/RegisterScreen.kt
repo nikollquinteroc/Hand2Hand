@@ -27,6 +27,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
+import androidx.navigation.compose.rememberNavController
 import com.google.firebase.auth.FirebaseAuth
 import com.nocountry.hand2hand.data.UserManager
 import com.nocountry.hand2hand.model.User
@@ -35,7 +36,7 @@ import com.nocountry.hand2hand.view.navigation.MainDestinations
 @Composable
 @Preview
 fun RegistroScreenPreview() {
-//    RegistroScreen(onRigister = {})
+    RegisterScreen(navigation = rememberNavController())
 }
 
 @Composable
@@ -124,13 +125,7 @@ fun RegisterScreen(
                     singleLine = true
 
                 )
-                Spacer(modifier = Modifier.height(25.dp))
-                TextField(value = e_mail, onValueChange ={ e_mail = it },
-                    label  = { Text(text = "e_mail") },
-                    maxLines = 1,
-                    singleLine = true
 
-                )
                 Spacer(modifier = Modifier.height(25.dp))
                 TextField(value = address, onValueChange ={ address = it },
                     label  = { Text(text = "address") },

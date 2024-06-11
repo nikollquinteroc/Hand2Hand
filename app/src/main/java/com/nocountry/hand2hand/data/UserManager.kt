@@ -1,11 +1,12 @@
 package com.nocountry.hand2hand.data
 
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.values
 import com.nocountry.hand2hand.model.User
 
 class UserManager{
-//    fun getUser(): Flow<Contact> {
-//
+//    fun getUser(): User {
+//        FirebaseConnection.userDB.values()
 //    }
 
     fun addUser(user: User){
