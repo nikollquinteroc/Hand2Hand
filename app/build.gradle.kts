@@ -68,6 +68,12 @@ dependencies {
     implementation(platform(libs.firebase.bom))
     implementation(libs.google.firebase.firestore)
 
+    // ViewModel
+    implementation(libs.androidx.viewmodel.compose)
+
+    //Coil
+    implementation(libs.coil)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

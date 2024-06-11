@@ -7,4 +7,115 @@
     <string name="selling_bar">Vender</string>
     <string name="messages_bar">Mensajes</string>
     <string name="account_bar">Perfil</string>
+
+    <!--Tool Bar-->
+    <string name="new_product">Nueva publicación</string>
+
+    <!--Bottoms -->
+    <string name="create_new_product_bottom">Crear una nueva publicación</string>
+    <string name="publish_product">Publicar producto</string>
+    <string name="go_back">Volver</string>
+
+    <!--Titles -->
+    <string name="resume_publication">Retoma la publicación</string>
+
+    <!--Product created -->
+    <string name="title_product_created">Felicitaciones!</string>
+    <string name="message_product_created">Tu producto ha sido publicado \nexitosamente</string>
+
+    <!-- Form field titles-->
+    <string name="category">Categoría</string>
+    <string name="title_product">Título de la publicación</string>
+    <string name="description_product">Descripción del producto</string>
+    <string name="state_product">Estado</string>
+    <string name="real_price_product">Precio Real</string>
+    <string name="discount_price_product">Precio Descuento</string>
+
+
+    <!-- Form field labels-->
+    <string name="category_label">Seleccionar la categoría</string>
+    <string name="title_product_label">Escribe el título de tu producto</string>
+    <string name="description_product_label">Describe tu producto</string>
+    <string name="state_product_label">Seleccionar el estado</string>
+    <string name="real_price_product_label">Escribe el precio real de tu producto</string>
+    <string name="discount_price_product_label">Escribe el precio de descuento de tu producto</string>
+
+
+
+
+    <!-- Category-->
+    <string name="home_category">Hogar</string>
+    <string name="electronic_category">Electrónica</string>
+    <string name="beauty_category">Belleza</string>
+    <string name="toy_category">Juguetes</string>
+    <string name="garden_category">Jardín</string>
+    <string name="children_category">Niños</string>
+    <string name="fashion_category">Moda</string>
+    <string name="gamer_category">Gamer</string>
+
+
+    <!-- Subcategory-->
+    <string name="home_office_sub_category">Oficina en casa</string>
+    <string name="living_room_sub_category">Sala de estar</string>
+    <string name="bedroom_sub_category">Dormitorio</string>
+    <string name="dining_room_sub_category">Comedor</string>
+    <string name="kitchen_sub_category">Cocina</string>
+    <string name="bathroom_sub_category">Baño</string>
+    <string name="garden_sub_category">Exterior y jardín</string>
+    <string name="decoration_sub_category">Decoración</string>
+    <string name="storage_sub_category">Almacenamiento</string>
+    <string name="light_point_sub_category">Iluminación</string>
+
+    <!-- Specific items-->
+    <string name="desk_item">Escritorios</string>
+    <string name="office_chair_item">Sillas de oficina</string>
+    <string name="shelving_item">Estanterías</string>
+    <string name="filing_cabinets_item">Archivadores</string>
+    <string name="desk_organizers_item">Organizadores de escritorio</string>
+    <string name="desk_lamps_item">Lámparas de escritorio</string>
+    <string name="doilies_item">Tapetes</string>
+    <string name="office_sofas_item">Sofás de oficina</string>
+    <string name="side_tables_item">Mesas auxiliares</string>
+    <string name="slates_corks_item">Pizarras y corchos</string>
+
+    <!-- State-->
+    <string name="new_state">Nuevo</string>
+    <string name="semi_new_state">Seminuevo</string>
+    <string name="used_state">Usado</string>
+
+    <!-- Material-->
+    <string name="wood_material">Madera</string>
+    <string name="metal_material">Metal</string>
+    <string name="glass_material">Vidrio</string>
+    <string name="plastic_material">Plástico</string>
+    <string name="velvet_material">Terciopelo</string>
+    <string name="leather_material">Cuero</string>
+    <string name="marble_material">Mármol</string>
+    <string name="ceramics_material">Cerámica</string>
+    <string name="stone_material">Piedra</string>
+    <string name="resin_material">Resina</string>
+    <string name="aluminum_material">Aluminio</string>
+    <string name="teflon_material">Teflón</string>
+    <string name="latex_material">Látex</string>
+    <string name="microfiber_material">Microfibra</string>
+    <string name="polypropylene_material">Polipropileno</string>
+
+    <!-- Colors-->
+    <string name="blue">Azul</string>
+    <string name="yellow">Amarillo</string>
+    <string name="beige">Beige</string>
+    <string name="white">Blanco</string>
+    <string name="gray">Gris</string>
+    <string name="brown">Marrón</string>
+    <string name="orange">Naranja</string>
+    <string name="black">Negro</string>
+    <string name="red">Rojo</string>
+    <string name="pink">Rosa</string>
+    <string name="green">Verde</string>
+    <string name="violet">Violeta</string>
+
+    <!--Form of sell -->
+    <string name="fixed_price">Precio fijo</string>
+    <string name="auction">Subasta</string>
+
 </resources>
