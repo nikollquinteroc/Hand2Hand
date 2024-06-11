@@ -10,5 +10,6 @@ class FirebaseConnection {
         val publicationDB = FirebaseDatabase.getInstance().reference.child("publication")
         val locationDB = FirebaseDatabase.getInstance().reference.child("location")
         val messageDB = FirebaseDatabase.getInstance().reference.child("message")
+        val contactDB = FirebaseDatabase.getInstance().reference.child("contacts")
     }
 }
