@@ -65,6 +65,8 @@ import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavHostController
+import androidx.navigation.compose.rememberNavController
 import com.nocountry.hand2hand.R
 import com.nocountry.hand2hand.data.repository.local.CardHome
 import com.nocountry.hand2hand.data.repository.local.SectionHome
@@ -76,7 +78,7 @@ import kotlinx.coroutines.delay
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun HomeScreen() {
+fun HomeScreen(navigation: NavHostController) {
     var text by rememberSaveable { mutableStateOf("") }
     var active by rememberSaveable { mutableStateOf(false) }
 
@@ -87,7 +89,7 @@ fun HomeScreen() {
             Header()
         },
         bottomBar = {
-            BottomNavigationBar {}
+            BottomNavigationBar {  navigation.navigate(it) }
         }
     ) {
         Box(
@@ -653,6 +655,6 @@ fun CardItem(
 fun HomeScreenPreview() {
     MaterialTheme {
         //CardSection("Ofertas del día")
-        HomeScreen()
+        HomeScreen(rememberNavController())
     }
 }
