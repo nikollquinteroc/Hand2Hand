@@ -193,7 +193,7 @@ fun TextItem(
             modifier = Modifier
                 .fillMaxWidth()
                 .background(color = Color.White, shape = RoundedCornerShape(10.dp))
-                .border(width = 1.dp, color = Color(0xFF6f50e9), shape = RoundedCornerShape(10.dp))
+                .border(width = 1.dp, color = Color(0xFFe2e2e2), shape = RoundedCornerShape(10.dp))
                 .padding(10.dp, 5.dp)
 
         ) {
@@ -207,7 +207,9 @@ fun TextItem(
                     .padding(10.dp, 5.dp),
                 value = text,
                 onValueChange = { cambioValor(it) }
-            )
+            ){
+                Text(text = text)
+            }
         }
     }
 }

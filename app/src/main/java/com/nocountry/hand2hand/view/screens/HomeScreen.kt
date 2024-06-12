@@ -75,6 +75,7 @@ import com.nocountry.hand2hand.model.cards
 import com.nocountry.hand2hand.model.categories
 import com.nocountry.hand2hand.model.sections
 import com.nocountry.hand2hand.view.components.BottomNavigationBar
+import com.nocountry.hand2hand.view.components.TopBarHome
 import kotlinx.coroutines.delay
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -200,74 +201,75 @@ fun HomeScreen(navigation: NavHostController) {
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 private fun Header() {
-    TopAppBar(
-        title = {
-            Row(
-                modifier = Modifier
-                    .width(284.dp)
-                    .height(24.dp),
-                horizontalArrangement = Arrangement.spacedBy(10.dp, Alignment.Start),
-                verticalAlignment = Alignment.CenterVertically,
-            ) {
-                Image(
-                    modifier = Modifier
-                        .size(200.dp)
-                        .padding(5.dp)
-                        ,
-                    painter = painterResource(R.drawable.ic_logo_hand2hand),
-                    contentDescription = "")
-
-
-
-            }
-        },
-        colors = TopAppBarDefaults.topAppBarColors(
-            containerColor = Color(0xFF6F50E9)
-        ),
-        actions = {
-            IconButton(
-                onClick = { /*TODO*/ },
-                modifier = Modifier
-                    .width(32.dp)
-                    .height(32.dp)
-                    .padding(start = 4.dp, top = 4.dp, end = 4.dp, bottom = 4.dp)
-            ) {
-                Icon(
-                    imageVector = Icons.Default.Notifications,
-                    contentDescription = null,
-                    modifier = Modifier
-                        .padding(1.dp)
-                        .width(24.dp)
-                        .height(24.dp),
-                    tint = Color.White
-                )
-            }
-            Spacer(modifier = Modifier.width(16.dp))
-            IconButton(
-                onClick = { /*TODO*/ },
-                modifier = Modifier
-                    .width(32.dp)
-                    .height(32.dp)
-                    .padding(
-                        start = 4.dp,
-                        top = 4.dp,
-                        end = 4.dp,
-                        bottom = 4.dp
-                    )
-            ) {
-                Icon(
-                    imageVector = Icons.Default.ShoppingCart,
-                    contentDescription = null,
-                    modifier = Modifier
-                        .padding(1.dp)
-                        .width(24.dp)
-                        .height(24.dp),
-                    tint = Color.White
-                )
-            }
-            Spacer(modifier = Modifier.height(20.dp))
-        }
-    )
+    TopBarHome()
+//    TopAppBar(
+//        title = {
+//            Row(
+//                modifier = Modifier
+//                    .width(284.dp)
+//                    .height(24.dp),
+//                horizontalArrangement = Arrangement.spacedBy(10.dp, Alignment.Start),
+//                verticalAlignment = Alignment.CenterVertically,
+//            ) {
+//                Image(
+//                    modifier = Modifier
+//                        .size(200.dp)
+//                        .padding(5.dp)
+//                        ,
+//                    painter = painterResource(R.drawable.ic_logo_hand2hand),
+//                    contentDescription = "")
+//
+//
+//
+//            }
+//        },
+//        colors = TopAppBarDefaults.topAppBarColors(
+//            containerColor = Color(0xFF6F50E9)
+//        ),
+//        actions = {
+//            IconButton(
+//                onClick = { /*TODO*/ },
+//                modifier = Modifier
+//                    .width(32.dp)
+//                    .height(32.dp)
+//                    .padding(start = 4.dp, top = 4.dp, end = 4.dp, bottom = 4.dp)
+//            ) {
+//                Icon(
+//                    imageVector = Icons.Default.Notifications,
+//                    contentDescription = null,
+//                    modifier = Modifier
+//                        .padding(1.dp)
+//                        .width(24.dp)
+//                        .height(24.dp),
+//                    tint = Color.White
+//                )
+//            }
+//            Spacer(modifier = Modifier.width(16.dp))
+//            IconButton(
+//                onClick = { /*TODO*/ },
+//                modifier = Modifier
+//                    .width(32.dp)
+//                    .height(32.dp)
+//                    .padding(
+//                        start = 4.dp,
+//                        top = 4.dp,
+//                        end = 4.dp,
+//                        bottom = 4.dp
+//                    )
+//            ) {
+//                Icon(
+//                    imageVector = Icons.Default.ShoppingCart,
+//                    contentDescription = null,
+//                    modifier = Modifier
+//                        .padding(1.dp)
+//                        .width(24.dp)
+//                        .height(24.dp),
+//                    tint = Color.White
+//                )
+//            }
+//            Spacer(modifier = Modifier.height(20.dp))
+//        }
+//    )
 }
 
 @OptIn(ExperimentalMaterial3Api::class)
