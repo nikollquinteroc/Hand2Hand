@@ -16,7 +16,8 @@ coil-compose = "2.6.0"
 viewmodelCompose = "2.8.1"
 navigationRuntimeKtx = "2.7.7"
 navigationCompose = "2.7.7"
-
+firebase-database = "21.0.0"
+firebase-auth = "23.0.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -38,6 +39,9 @@ androidx-navigation-compose = { group = "androidx.navigation", name = "navigatio
 androidx-compose-material = { group = "androidx.compose.material", name = "material-icons-extended", version.ref = "composeMaterial" }
 firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebase-bom" }
 google-firebase-firestore = { group = "com.google.firebase", name = "firebase-firestore", version.ref = "firebase-firestore" }
+google-firebase-database = { group = "com.google.firebase", name = "firebase-database-ktx", version.ref = "firebase-database" }
+google-firebase-auth = { group = "com.google.firebase", name = "firebase-auth-ktx", version.ref = "firebase-auth" }
+google-firebase-storage = { group = "com.google.firebase", name = "firebase-storage-ktx" }
 coil = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil-compose" }
 androidx-viewmodel-compose = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose", version.ref = "viewmodelCompose"}
 

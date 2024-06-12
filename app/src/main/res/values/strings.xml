@@ -6,6 +6,13 @@
     <string name="welcome_onboarding">Bienvenido</string>
     <string name="description_onboarding">Este es un espacio para vender y subastar lo que ya no usas y comprar lo que deseas fácilmente y a un mejor precio.</string>
 
+    <!-- Login -->
+    <string name="email_label">Email</string>
+    <string name="password_label">Password</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="welcome_back_login">Welcome back</string>
+    <string name="forgot_password_login">Forgot your password?</string>
+    <string name="without_account">¿Do you have an account? Register</string>
 
     <!--Bottom Navigation Bar-->
     <string name="home_bar">Home</string>

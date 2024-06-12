@@ -13,8 +13,8 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.nocountry.hand2hand.R
-import com.nocountry.hand2hand.data.model.firebase.Category
-import com.nocountry.hand2hand.data.model.firebase.State
+import com.nocountry.hand2hand.data.model.firebase_firestore.Category
+import com.nocountry.hand2hand.data.model.firebase_firestore.State
 import com.nocountry.hand2hand.ui.components.OutlinedTextFieldComponent
 import com.nocountry.hand2hand.ui.components.SpacerComponent
 import com.nocountry.hand2hand.ui.components.TextButtonComponent

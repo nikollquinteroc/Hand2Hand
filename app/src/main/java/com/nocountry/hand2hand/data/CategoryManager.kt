@@ -4,8 +4,8 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.ValueEventListener
-import com.nocountry.hand2hand.model.Category
-import com.nocountry.hand2hand.prueba.model.Contact
+import com.nocountry.hand2hand.data.model.firebase_realtime.Category
+import com.nocountry.hand2hand.ui.prueba.model.Contact
 import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.callbackFlow

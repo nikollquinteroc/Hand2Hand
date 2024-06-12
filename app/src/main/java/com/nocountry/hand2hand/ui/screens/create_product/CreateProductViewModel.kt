@@ -7,9 +7,9 @@ import androidx.lifecycle.createSavedStateHandle
 import androidx.lifecycle.viewModelScope
 import androidx.lifecycle.viewmodel.CreationExtras
 import com.google.firebase.firestore.FirebaseFirestore
-import com.nocountry.hand2hand.data.model.firebase.Category
-import com.nocountry.hand2hand.data.model.firebase.Product
-import com.nocountry.hand2hand.data.model.firebase.State
+import com.nocountry.hand2hand.data.model.firebase_firestore.Category
+import com.nocountry.hand2hand.data.model.firebase_firestore.Product
+import com.nocountry.hand2hand.data.model.firebase_firestore.State
 import com.nocountry.hand2hand.data.repository.CategoryRepositoryImpl
 import com.nocountry.hand2hand.data.repository.ProductRepositoryImpl
 import com.nocountry.hand2hand.data.repository.StateRepositoryImpl

@@ -17,7 +17,6 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
@@ -33,9 +32,9 @@ import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import coil.compose.AsyncImage
 import com.nocountry.hand2hand.R
-import com.nocountry.hand2hand.data.model.firebase.Category
-import com.nocountry.hand2hand.data.model.firebase.Product
-import com.nocountry.hand2hand.data.model.firebase.State
+import com.nocountry.hand2hand.data.model.firebase_firestore.Category
+import com.nocountry.hand2hand.data.model.firebase_firestore.Product
+import com.nocountry.hand2hand.data.model.firebase_firestore.State
 import com.nocountry.hand2hand.ui.components.ButtonComponent
 import com.nocountry.hand2hand.ui.components.ImagePicker
 import com.nocountry.hand2hand.ui.components.SpacerComponent

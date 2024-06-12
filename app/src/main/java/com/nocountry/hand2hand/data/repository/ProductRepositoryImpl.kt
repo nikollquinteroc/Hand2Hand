@@ -1,7 +1,7 @@
 package com.nocountry.hand2hand.data.repository
 
 import com.google.firebase.firestore.FirebaseFirestore
-import com.nocountry.hand2hand.data.model.firebase.Product
+import com.nocountry.hand2hand.data.model.firebase_firestore.Product
 import com.nocountry.hand2hand.domain.ProductRepository
 import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.flow.Flow

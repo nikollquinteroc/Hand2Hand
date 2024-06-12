@@ -1,6 +1,6 @@
 package com.nocountry.hand2hand.domain
 
-import com.nocountry.hand2hand.data.model.firebase.Product
+import com.nocountry.hand2hand.data.model.firebase_firestore.Product
 import kotlinx.coroutines.flow.Flow
 
 interface ProductRepository {

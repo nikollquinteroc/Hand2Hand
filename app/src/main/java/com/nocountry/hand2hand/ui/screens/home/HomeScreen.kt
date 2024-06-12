@@ -74,6 +74,7 @@ import com.nocountry.hand2hand.data.repository.local.cards
 import com.nocountry.hand2hand.data.repository.local.categoriesHome
 import com.nocountry.hand2hand.data.repository.local.sections
 import com.nocountry.hand2hand.ui.components.BottomNavigationBar
+import com.nocountry.hand2hand.ui.components.TopBarHome
 import kotlinx.coroutines.delay
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -86,7 +87,8 @@ fun HomeScreen(navigation: NavHostController) {
 
     Scaffold(
         topBar = {
-            Header()
+            //Header()
+            TopBarHome()
         },
         bottomBar = {
             BottomNavigationBar {  navigation.navigate(it) }

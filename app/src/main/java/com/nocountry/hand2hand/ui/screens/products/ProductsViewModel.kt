@@ -1,7 +1,7 @@
 package com.nocountry.hand2hand.ui.screens.products
 
 import androidx.lifecycle.ViewModel
-import com.nocountry.hand2hand.data.model.firebase.Product
+import com.nocountry.hand2hand.data.model.firebase_firestore.Product
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 

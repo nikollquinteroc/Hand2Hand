@@ -71,6 +71,9 @@ dependencies {
     //Firebase
     implementation(platform(libs.firebase.bom))
     implementation(libs.google.firebase.firestore)
+    implementation(libs.google.firebase.database)
+    implementation(libs.google.firebase.auth)
+    implementation(libs.google.firebase.storage)
 
     // ViewModel
     implementation(libs.androidx.viewmodel.compose)
@@ -86,8 +89,4 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
-
-    implementation("com.google.firebase:firebase-database-ktx:20.2.2")
-    implementation("com.google.firebase:firebase-auth-ktx:22.1.2")
-    implementation("com.google.firebase:firebase-storage-ktx")
 }

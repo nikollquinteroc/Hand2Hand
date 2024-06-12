@@ -3,7 +3,7 @@ package com.nocountry.hand2hand.data.repository
 import android.content.ContentValues
 import android.util.Log
 import com.google.firebase.firestore.FirebaseFirestore
-import com.nocountry.hand2hand.data.model.firebase.State
+import com.nocountry.hand2hand.data.model.firebase_firestore.State
 import com.nocountry.hand2hand.domain.StateRepository
 import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.flow.Flow

@@ -1,8 +1,6 @@
 package com.nocountry.hand2hand.data
 
-import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.database.values
-import com.nocountry.hand2hand.model.User
+import com.nocountry.hand2hand.data.model.firebase_realtime.User
 
 class UserManager{
 //    fun getUser(): User {
