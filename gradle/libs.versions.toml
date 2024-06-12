@@ -14,6 +14,8 @@ firebase-bom = "33.1.0"
 firebase-firestore = "25.0.0"
 coil-compose = "2.6.0"
 viewmodelCompose = "2.8.1"
+navigationRuntimeKtx = "2.7.7"
+navigationCompose = "2.7.7"
 
 
 [libraries]
@@ -31,6 +33,8 @@ androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-toolin
 androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
 androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+androidx-navigation-runtime-ktx = { group = "androidx.navigation", name = "navigation-runtime-ktx", version.ref = "navigationRuntimeKtx" }
+androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationCompose" }
 androidx-compose-material = { group = "androidx.compose.material", name = "material-icons-extended", version.ref = "composeMaterial" }
 firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebase-bom" }
 google-firebase-firestore = { group = "com.google.firebase", name = "firebase-firestore", version.ref = "firebase-firestore" }

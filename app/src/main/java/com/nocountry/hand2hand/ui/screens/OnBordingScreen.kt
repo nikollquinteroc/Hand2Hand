@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -26,53 +27,74 @@ import com.nocountry.hand2hand.ui.components.ButtonComponent
 import com.nocountry.hand2hand.ui.components.SpacerComponent
 
 @Composable
-fun InProgressScreen(navigateUp: () -> Unit) {
+fun OnBoardingScreen(navigateToLogin: () -> Unit) {
     Column(
         modifier = Modifier
             .width(420.dp)
             .height(800.dp)
-            .background(color = Color(0xFFEDEDED))
-            .padding(start = 20.dp, top = 71.dp, end = 20.dp, bottom = 71.17126.dp),
-        verticalArrangement = Arrangement.spacedBy(0.dp, Alignment.CenterVertically),
+            .background(
+                color = Color(0xFFFFFFFF),
+                shape = RoundedCornerShape(size = 5.dp)
+            )
+            .padding(
+                start = 20.dp,
+                top = 1.dp,
+                end = 20.dp,
+                bottom = 12.9326171875.dp
+            ),
+        verticalArrangement = Arrangement.spacedBy(
+            12.93.dp,
+            Alignment.CenterVertically
+        ),
         horizontalAlignment = Alignment.CenterHorizontally,
     ) {
         Image(
-            painter = painterResource(id = R.drawable.not_found),
+            painter = painterResource(id = R.drawable.onboarding_icon),
+            contentDescription = null,
+            modifier = Modifier
+                .width(380.dp)
+                .height(92.dp)
+        )
+        SpacerComponent(modifier = Modifier.height(30.dp))
+        Image(
+            painter = painterResource(id = R.drawable.onboarding),
             contentDescription = null, modifier = Modifier
                 .padding(0.91651.dp)
                 .width(350.dp)
                 .height(234.8287.dp),
             contentScale = ContentScale.None
         )
-        SpacerComponent(modifier = Modifier.height(70.dp))
+        SpacerComponent(modifier = Modifier.height(30.dp))
         Text(
-            text = "Pantalla en progreso",
+            text = stringResource(id = R.string.welcome_onboarding),
             modifier = Modifier
                 .width(380.dp),
             textAlign = TextAlign.Center,
             style = MaterialTheme.typography.titleLarge.copy(
                 fontSize = 30.sp,
                 fontWeight = FontWeight(900)
-            ), color = Color(0xFF6F50E9)
+            ), color = Color(0xFF131221)
         )
         SpacerComponent(modifier = Modifier.height(10.dp))
         Text(
-            text = "Lo siento, intenta más tarde",
-            style = MaterialTheme.typography.bodyMedium.copy(fontWeight = FontWeight(400))
+            text = stringResource(id = R.string.description_onboarding),
+            style = MaterialTheme.typography.bodyLarge.copy(fontWeight = FontWeight(400)),
+            textAlign = TextAlign.Center,
+            //modifier = Modifier.padding(start = 30.dp, end = 30.dp)
         )
-        SpacerComponent(modifier = Modifier.height(70.dp))
+        SpacerComponent(modifier = Modifier.height(30.dp))
         ButtonComponent(
-            text = stringResource(id = R.string.go_back),
+            text = stringResource(id = R.string.star_onboarding),
             backgroundColorButton = Color(0xFF6F50E9),
-            onClick = navigateUp
+            onClick = navigateToLogin
         )
     }
 }
 
 @Preview
 @Composable
-fun InProgressScreenPreview() {
+fun OnBoardingScreenPreview() {
     MaterialTheme {
-        InProgressScreen(navigateUp = {})
+        OnBoardingScreen(navigateToLogin = {})
     }
 }

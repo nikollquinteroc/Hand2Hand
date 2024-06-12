@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
+import com.nocountry.hand2hand.ui.navigation.Navigation
 import com.nocountry.hand2hand.ui.screens.ErrorScreen
 import com.nocountry.hand2hand.ui.screens.InProgressScreen
 import com.nocountry.hand2hand.ui.screens.create_product.CreateProductScreen
@@ -23,8 +24,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    InProgressScreen({})
-                    //CreateProductScreen(navigateUp = {}, navigateHome = {})
+                    Navigation()
                 }
             }
         }

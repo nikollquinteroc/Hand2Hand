@@ -48,17 +48,17 @@ fun BottomNavigationBar(
                 nameIcon = R.string.home_bar
             )
             BottomNavigationBarItem(
-                onClick = { navigateToRoute(MainDestinations.SEARCH_ROUTE) },
+                onClick = { navigateToRoute(MainDestinations.AUCTION_ROUTE) },
                 icon = R.drawable.auction,
                 nameIcon = R.string.auction_bar
             )
             BottomSellNavigationBarItem(
-                onClick = { navigateToRoute(MainDestinations.BUYING_ROUTE) },
+                onClick = { navigateToRoute(MainDestinations.SELLING_ROUTE) },
                 icon = R.drawable.sell_icon,
                 nameIcon = R.string.selling_bar
             )
             BottomNavigationBarItem(
-                onClick = { navigateToRoute(MainDestinations.SELLING_ROUTE) },
+                onClick = { navigateToRoute(MainDestinations.MESSAGE_ROUTE) },
                 icon = R.drawable.chat,
                 nameIcon = R.string.messages_bar
             )
