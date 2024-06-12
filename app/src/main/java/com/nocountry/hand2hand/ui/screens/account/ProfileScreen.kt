@@ -34,18 +34,18 @@ import com.nocountry.hand2hand.ui.components.BottomNavigationBar
 import com.nocountry.hand2hand.ui.components.PerfilButton
 import com.nocountry.hand2hand.ui.components.TopBar
 import com.nocountry.hand2hand.ui.components.UserCard
+import com.nocountry.hand2hand.ui.navigation.MainDestinations
 
 
 @Composable
 @Preview
-fun PerfilScreenPreview() {
-    PerfilScreen(navigation = rememberNavController())
+fun ProfileScreenPreview() {
+    ProfileScreen(navigation = rememberNavController())
 }
 
 @Composable
-fun PerfilScreen(
+fun ProfileScreen(
     navigation: NavHostController
-
 ) {
     Column(
         modifier = Modifier
@@ -92,7 +92,10 @@ fun PerfilScreen(
                     Spacer(modifier = Modifier.height(5.dp))
                     PerfilButton("Centro de ayuda", R.drawable.ic_help) {}
                     Spacer(modifier = Modifier.height(5.dp))
-                    PerfilButton("Cerrar sesion", R.drawable.ic_cerrar_sesion) {}
+                    PerfilButton(
+                        "Cerrar sesion",
+                        R.drawable.ic_cerrar_sesion
+                    ) { navigation.navigate(MainDestinations.LOGIN_ROUTE) }
                 }
             }
         }

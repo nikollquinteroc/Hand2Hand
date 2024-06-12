@@ -417,19 +417,13 @@ private fun Body(
             Spacer(modifier = Modifier.height(10.dp))
             CardSection(
                 textSection = sections[1].name,
-                cards = cards.subList(fromIndex = 3, toIndex = 10),
+                cards = cards.subList(fromIndex = 3, toIndex = 12),
                 isAuction = false
             )
             Spacer(modifier = Modifier.height(10.dp))
             CardSection(
                 textSection = sections[2].name,
                 cards = cards.subList(fromIndex = 6, toIndex = 10),
-                isAuction = false
-            )
-            Spacer(modifier = Modifier.height(10.dp))
-            CardSection(
-                textSection = sections[3].name,
-                cards = cards.subList(fromIndex = 8, toIndex = 10),
                 isAuction = false
             )
         }
@@ -541,7 +535,6 @@ fun CardItem(
                             color = Color(0xFFFFFFFF),
                             shape = RoundedCornerShape(size = 6.dp)
                         )
-
                 )
             }
             Column(
@@ -616,12 +609,12 @@ fun CardItem(
                                 modifier = Modifier
                                     .height(14.dp)
                                     .weight(1f),
-                                color = Color(0xFF82BA84)
+                                color = Color(0xFF23675E)
                             )
                             Text(
-                                text = "$20.600",
+                                text = "$19.600",
                                 style = MaterialTheme.typography.labelLarge,
-                                color = Color(0xFF82BA84),
+                                color = Color(0xFF23675E),
                                 modifier = Modifier
                                     .height(16.dp)
                                     .weight(1f)
@@ -629,19 +622,17 @@ fun CardItem(
                         }
                         Row(
                             modifier = Modifier
-                                .width(120.dp)
-                                .height(12.dp),
+                                .width(120.dp),
+                                //.height(12.dp),
                             horizontalArrangement = Arrangement.spacedBy(2.dp, Alignment.Start),
                             verticalAlignment = Alignment.Top,
                         ) {
                             Image(
-                                painter = painterResource(id = R.drawable.clock),
+                                painter = painterResource(id = R.drawable.component_62),
                                 contentDescription = null,
-                                contentScale = ContentScale.None,
+                                contentScale = ContentScale.Crop,
                                 modifier = Modifier
-                                    .padding(1.dp)
-                                    .width(12.dp)
-                                    .height(12.dp)
+                                    .fillMaxWidth().padding(bottom = 4.dp).height(30.dp)
                             )
                         }
                     }

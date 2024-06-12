@@ -47,6 +47,7 @@ val cards: List<CardHome> = listOf(
     CardHome(R.drawable.image_09, "Sillón vintage", "$20.000", "$45.000", "Seminuevo"),
     CardHome(R.drawable.image_01, "Sillón vintage", "$20.000", "$45.000", "Seminuevo"),
     CardHome(R.drawable.image_02, "Sillón vintage", "$20.000", "$45.000", "Seminuevo"),
+    CardHome(R.drawable.image_10, "Escritorio", "$40.000", "$60.000", "Seminuevo"),
 )
 
 data class SectionHome(
@@ -57,5 +58,4 @@ val sections: List<SectionHome> = listOf(
     SectionHome("Subastas del día"),
     SectionHome("Productos del día"),
     SectionHome("Ofertas del día"),
-    SectionHome("Productos del día"),
 )

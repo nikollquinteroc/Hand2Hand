@@ -52,15 +52,15 @@ fun RegisterScreen(
     navigation: NavHostController
 ) {
     //campos usuario y validar contraseña
-    var username by remember { mutableStateOf("nombre@mail.com") }
-    var password by remember { mutableStateOf("123456") }
-    var passwordRepeat by remember { mutableStateOf("123456") }
+    var username by remember { mutableStateOf("") }
+    var password by remember { mutableStateOf("") }
+    var passwordRepeat by remember { mutableStateOf("") }
 
     //datos usuario
-    var name by remember { mutableStateOf("nombre") }
-    var lastname by remember { mutableStateOf("apellido") }
+    var name by remember { mutableStateOf("") }
+    var lastname by remember { mutableStateOf("") }
     var birthdate by remember { mutableStateOf("17-11-1998") }
-    var phone by remember { mutableStateOf("8098786275") }
+    var phone by remember { mutableStateOf("") }
     var e_mail by remember { mutableStateOf("saraza@mail.com") }
     var address by remember { mutableStateOf("casa de al lado") }
 

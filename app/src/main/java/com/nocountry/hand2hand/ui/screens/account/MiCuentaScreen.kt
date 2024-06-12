@@ -9,7 +9,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.material3.Divider
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -26,14 +26,15 @@ import com.nocountry.hand2hand.ui.components.UserCard
 
 @Composable
 @Preview
-fun MiCuentaScreenPreview(){
-    MiCuentaScreen(  navigation = rememberNavController())
+fun MiCuentaScreenPreview() {
+    MiCuentaScreen(navigation = rememberNavController())
 
 }
+
 @Composable
 fun MiCuentaScreen(
     navigation: NavHostController,
-){
+) {
 
     Column(
         modifier = Modifier
@@ -41,38 +42,45 @@ fun MiCuentaScreen(
             .background(color = Color.White),
 
         ) {
-        TopBar("Mi Cuenta"){navigation.popBackStack()}
-        Divider()
+        TopBar("Mi Cuenta") { navigation.popBackStack() }
+        HorizontalDivider()
         Spacer(modifier = Modifier.height(15.dp))
-        Box(modifier = Modifier
-            .padding(15.dp)
-            .border(
-                width = 0.dp,
-                color = Color(0xFF31628d)
-            )
-        ){
+        Box(
+            modifier = Modifier
+                .padding(15.dp)
+                .border(
+                    width = 0.dp,
+                    color = Color(0xFF31628d)
+                )
+        ) {
             UserCard()
         }
         Spacer(modifier = Modifier.height(15.dp))
-        LazyColumn(modifier = Modifier
-            .weight(1f)
-            .padding(10.dp)
+        LazyColumn(
+            modifier = Modifier
+                .weight(1f)
+                .padding(10.dp)
         ) {
             item {
 
-                Column (modifier = Modifier
-                ){
-                    PerfilButton(titulo = "Información Personal", icon = R.drawable.ic_user){navigation.navigate("InformacionPersonal")}
-                    PerfilButton(titulo = "Dato de la cuenta", icon = R.drawable.ic_datocuenta){}
-                    PerfilButton(titulo = "Seguridad", icon = R.drawable.ic_seguridad){}
-                    PerfilButton(titulo = "Tarjeta", icon = R.drawable.ic_tarjeta){}
-                    PerfilButton(titulo = "Domicilio", icon = R.drawable.ic_domicilio){}
+                Column(
+                    modifier = Modifier
+                ) {
+                    PerfilButton(
+                        titulo = "Información Personal",
+                        icon = R.drawable.ic_user
+                    ) { navigation.navigate("InformacionPersonal") }
+                    PerfilButton(titulo = "Dato de la cuenta", icon = R.drawable.ic_datocuenta) {}
+                    PerfilButton(titulo = "Seguridad", icon = R.drawable.ic_seguridad) {}
+                    PerfilButton(titulo = "Tarjeta", icon = R.drawable.ic_tarjeta) {}
+                    PerfilButton(titulo = "Domicilio", icon = R.drawable.ic_domicilio) {}
                 }
             }
 
 
         }
         BottomNavigationBar {
+            navigation.navigate(it)
         }
     }
 

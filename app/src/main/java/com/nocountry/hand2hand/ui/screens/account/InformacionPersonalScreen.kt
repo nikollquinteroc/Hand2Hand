@@ -13,7 +13,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.BasicTextField
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
-import androidx.compose.material3.Divider
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -34,14 +34,15 @@ import com.nocountry.hand2hand.ui.components.TopBar
 
 @Composable
 @Preview
-fun InformacionPersonalScreenPreview(){
+fun InformacionPersonalScreenPreview() {
     InformacionPersonalScreen(navigation = rememberNavController())
 
 }
+
 @Composable
 fun InformacionPersonalScreen(
     navigation: NavHostController
-){
+) {
     var editarCampos by remember { mutableStateOf(false) }
     var nombre by remember { mutableStateOf("") }
     var apellido by remember { mutableStateOf("") }
@@ -57,31 +58,45 @@ fun InformacionPersonalScreen(
             .background(color = Color(0xFffededed)),
 
         ) {
-        TopBar("Informacion Personal"){navigation.popBackStack()}
-        Divider()
+        TopBar("Informacion Personal") { navigation.popBackStack() }
+        HorizontalDivider()
 
 //
         Spacer(modifier = Modifier.height(15.dp))
-        LazyColumn(modifier = Modifier
-            .background(color = Color(0xFffededed))
-            .weight(1f)
-            .padding(10.dp)
+        LazyColumn(
+            modifier = Modifier
+                .background(color = Color(0xFffededed))
+                .weight(1f)
+                .padding(10.dp)
         ) {
             item {
-                Column(){
+                Column {
 
-                    if(editarCampos == true){
+                    if (editarCampos == true) {
                         //campos para editar la informacion y boton guardar
 //            Text(text = "Guardar")
 
                         TextItem(titulo = "Nombre", text = nombre, cambioValor = { nombre = it })
-                        TextItem(titulo = "Apellido", text = apellido, cambioValor = {apellido = it})
-                        TextItem(titulo = "Fecha de nacimiento", text = fecha, cambioValor = {fecha = it})
-                        TextItem(titulo = "telefono", text = telefono, cambioValor = {telefono = it})
-                        TextItem(titulo = "Direccion", text = direccion, cambioValor = {direccion = it})
+                        TextItem(
+                            titulo = "Apellido",
+                            text = apellido,
+                            cambioValor = { apellido = it })
+                        TextItem(
+                            titulo = "Fecha de nacimiento",
+                            text = fecha,
+                            cambioValor = { fecha = it })
+                        TextItem(
+                            titulo = "telefono",
+                            text = telefono,
+                            cambioValor = { telefono = it })
+                        TextItem(
+                            titulo = "Direccion",
+                            text = direccion,
+                            cambioValor = { direccion = it })
 
 
-                        Button(onClick = { editarCampos = false },
+                        Button(
+                            onClick = { editarCampos = false },
                             modifier = Modifier
                                 .fillMaxWidth()
                                 .padding(10.dp),
@@ -89,60 +104,71 @@ fun InformacionPersonalScreen(
                             shape = RoundedCornerShape(10.dp)
 
                         ) {
-                            Text(text = "Guardar",
+                            Text(
+                                text = "Guardar",
                                 modifier = Modifier
                             )
                         }
 
 
-                    }
-                    else{
+                    } else {
                         //Text que muestren los datos y el boton editar
 //            Text(text = "Editar")
 
-                        Text( modifier = Modifier.padding(5.dp),
+                        Text(
+                            modifier = Modifier.padding(5.dp),
                             text = "Nombre",
                             fontSize = 15.sp,
                             style = TextStyle(
-                                fontWeight = FontWeight.Bold)
+                                fontWeight = FontWeight.Bold
+                            )
                         )
                         Text(text = nombre, modifier = Modifier.padding(5.dp))
 
 
-                        Text( modifier = Modifier.padding(5.dp),
+                        Text(
+                            modifier = Modifier.padding(5.dp),
                             text = "Apellido",
                             fontSize = 15.sp,
                             style = TextStyle(
-                                fontWeight = FontWeight.Bold)
+                                fontWeight = FontWeight.Bold
+                            )
                         )
-                        Text(text = apellido,modifier = Modifier.padding(5.dp))
+                        Text(text = apellido, modifier = Modifier.padding(5.dp))
 
-                        Text( modifier = Modifier.padding(5.dp),
+                        Text(
+                            modifier = Modifier.padding(5.dp),
                             text = "Fecha de nacimiento",
                             fontSize = 15.sp,
                             style = TextStyle(
-                                fontWeight = FontWeight.Bold)
+                                fontWeight = FontWeight.Bold
+                            )
                         )
-                        Text(text = fecha,modifier = Modifier.padding(5.dp))
+                        Text(text = fecha, modifier = Modifier.padding(5.dp))
 
-                        Text( modifier = Modifier.padding(5.dp),
+                        Text(
+                            modifier = Modifier.padding(5.dp),
                             text = "telefono",
                             fontSize = 15.sp,
                             style = TextStyle(
-                                fontWeight = FontWeight.Bold)
+                                fontWeight = FontWeight.Bold
+                            )
                         )
-                        Text(text = telefono,modifier = Modifier.padding(5.dp))
+                        Text(text = telefono, modifier = Modifier.padding(5.dp))
 
-                        Text( modifier = Modifier.padding(5.dp),
+                        Text(
+                            modifier = Modifier.padding(5.dp),
                             text = "Direccion",
                             fontSize = 15.sp,
                             style = TextStyle(
-                                fontWeight = FontWeight.Bold)
+                                fontWeight = FontWeight.Bold
+                            )
                         )
-                        Text(text = direccion,modifier = Modifier.padding(5.dp))
+                        Text(text = direccion, modifier = Modifier.padding(5.dp))
 
 
-                        Button(onClick = { editarCampos = true },
+                        Button(
+                            onClick = { editarCampos = true },
                             modifier = Modifier
                                 .fillMaxWidth()
                                 .padding(10.dp),
@@ -150,7 +176,8 @@ fun InformacionPersonalScreen(
                             shape = RoundedCornerShape(10.dp)
 
                         ) {
-                            Text(text = "Editar",
+                            Text(
+                                text = "Editar",
                                 modifier = Modifier
                             )
                         }
@@ -163,13 +190,14 @@ fun InformacionPersonalScreen(
         }
 
         BottomNavigationBar {
+            navigation.navigate(it)
         }
     }
 }
 
 @Composable
 fun TextItem(
-    titulo : String,
+    titulo: String,
     text: String,
     cambioValor: (String) -> Unit
 ) {
@@ -180,11 +208,13 @@ fun TextItem(
 
     ) {
 
-        Text( modifier = Modifier.padding(5.dp),
+        Text(
+            modifier = Modifier.padding(5.dp),
             text = titulo,
             fontSize = 15.sp,
             style = TextStyle(
-                fontWeight = FontWeight.Bold)
+                fontWeight = FontWeight.Bold
+            )
         )
         Column(
             modifier = Modifier
@@ -204,7 +234,7 @@ fun TextItem(
                     .padding(10.dp, 5.dp),
                 value = text,
                 onValueChange = { cambioValor(it) }
-            ){
+            ) {
                 Text(text = text)
             }
         }

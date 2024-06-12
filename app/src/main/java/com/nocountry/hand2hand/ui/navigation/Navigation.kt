@@ -12,6 +12,7 @@ import com.nocountry.hand2hand.ui.screens.home.HomeScreen
 import com.nocountry.hand2hand.ui.screens.account.InformacionPersonalScreen
 import com.nocountry.hand2hand.ui.screens.login.LoginScreen
 import com.nocountry.hand2hand.ui.screens.account.MiCuentaScreen
+import com.nocountry.hand2hand.ui.screens.account.ProfileScreen
 import com.nocountry.hand2hand.ui.screens.register.RegisterScreen
 
 
@@ -44,6 +45,9 @@ fun Navigation(navController: NavHostController = rememberNavController()) {
         }
         composable(MainDestinations.MESSAGE_ROUTE) {
             InProgressScreen(navigateUp = { navController.navigateUp() })
+        }
+        composable(MainDestinations.ACCOUNT_ROUTE) {
+            ProfileScreen(navigation = navController)
         }
         composable("MiCuenta"){
             MiCuentaScreen(navigation = navController)

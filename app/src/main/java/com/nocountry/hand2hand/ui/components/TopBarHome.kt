@@ -3,8 +3,10 @@ package com.nocountry.hand2hand.ui.components
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
 import androidx.compose.material3.Icon
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -29,7 +31,8 @@ fun TopBarHome(){
             .fillMaxWidth()
             .background(
                 color = Color(0xFF6f50e9),
-            ).padding(10.dp)
+            )
+            .padding(10.dp)
     ){
        Icon(
            painter = painterResource(R.drawable.logo),
@@ -38,7 +41,9 @@ fun TopBarHome(){
            tint = Color.White
        )
         Box(
-            modifier = Modifier.padding(4.dp).weight(1f)
+            modifier = Modifier
+                .padding(4.dp)
+                .weight(1f)
         ){
 
             Icon(
@@ -54,6 +59,7 @@ fun TopBarHome(){
             modifier = Modifier.padding(4.dp),
             tint = Color.White
         )
+        Spacer(modifier = Modifier.width(10.dp))
         Icon(
             painter = painterResource(R.drawable.component_143),
             contentDescription =  "",
