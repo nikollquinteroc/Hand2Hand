@@ -9,4 +9,5 @@ object MainDestinations {
     const val SELLING_ROUTE = "selling"
     const val MESSAGE_ROUTE = "message"
     const val ACCOUNT_ROUTE = "account"
+    const val MY_PRODUCTS_ROUTE = "products"
 }

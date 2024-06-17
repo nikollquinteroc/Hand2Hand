@@ -53,7 +53,7 @@ fun BottomNavigationBar(
                 nameIcon = R.string.auction_bar
             )
             BottomSellNavigationBarItem(
-                onClick = { navigateToRoute(MainDestinations.SELLING_ROUTE) },
+                onClick = { navigateToRoute(MainDestinations.MY_PRODUCTS_ROUTE) },
                 icon = R.drawable.sell_icon,
                 nameIcon = R.string.selling_bar
             )

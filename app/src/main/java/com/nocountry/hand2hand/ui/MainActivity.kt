@@ -8,18 +8,14 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import com.nocountry.hand2hand.ui.navigation.Navigation
-import com.nocountry.hand2hand.ui.screens.ErrorScreen
-import com.nocountry.hand2hand.ui.screens.InProgressScreen
-import com.nocountry.hand2hand.ui.screens.create_product.CreateProductScreen
-import com.nocountry.hand2hand.ui.theme.SaleAppTheme
+import com.nocountry.hand2hand.ui.theme.Hand2HandAppTheme
 
 class MainActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            SaleAppTheme {
-                // A surface container using the 'background' color from the theme
+            Hand2HandAppTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background

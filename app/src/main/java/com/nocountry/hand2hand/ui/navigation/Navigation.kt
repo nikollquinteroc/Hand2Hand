@@ -7,12 +7,13 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.nocountry.hand2hand.ui.screens.InProgressScreen
 import com.nocountry.hand2hand.ui.screens.OnBoardingScreen
-import com.nocountry.hand2hand.ui.screens.create_product.CreateProductScreen
-import com.nocountry.hand2hand.ui.screens.home.HomeScreen
 import com.nocountry.hand2hand.ui.screens.account.InformacionPersonalScreen
-import com.nocountry.hand2hand.ui.screens.login.LoginScreen
 import com.nocountry.hand2hand.ui.screens.account.MiCuentaScreen
 import com.nocountry.hand2hand.ui.screens.account.ProfileScreen
+import com.nocountry.hand2hand.ui.screens.create_product.CreateProductScreen
+import com.nocountry.hand2hand.ui.screens.home.HomeScreen
+import com.nocountry.hand2hand.ui.screens.login.LoginScreen
+import com.nocountry.hand2hand.ui.screens.products.ProductsScreen
 import com.nocountry.hand2hand.ui.screens.register.RegisterScreen
 
 
@@ -28,7 +29,7 @@ fun Navigation(navController: NavHostController = rememberNavController()) {
         composable(MainDestinations.LOGIN_ROUTE) {
             LoginScreen(navigation = navController)
         }
-        composable(MainDestinations.REGISTER_ROUTE){
+        composable(MainDestinations.REGISTER_ROUTE) {
             RegisterScreen(navigation = navController)
         }
         composable(MainDestinations.HOME_ROUTE) {
@@ -43,16 +44,20 @@ fun Navigation(navController: NavHostController = rememberNavController()) {
                 navigateHome = { navController.navigate(MainDestinations.HOME_ROUTE) }
             )
         }
+        composable(MainDestinations.MY_PRODUCTS_ROUTE) {
+            ProductsScreen(navigateUp = { navController.navigateUp() },
+                onClickNewPublication = { navController.navigate(MainDestinations.SELLING_ROUTE) })
+        }
         composable(MainDestinations.MESSAGE_ROUTE) {
             InProgressScreen(navigateUp = { navController.navigateUp() })
         }
         composable(MainDestinations.ACCOUNT_ROUTE) {
             ProfileScreen(navigation = navController)
         }
-        composable("MiCuenta"){
+        composable("MiCuenta") {
             MiCuentaScreen(navigation = navController)
         }
-        composable("InformacionPersonal"){
+        composable("InformacionPersonal") {
             InformacionPersonalScreen(navigation = navController)
         }
     }
