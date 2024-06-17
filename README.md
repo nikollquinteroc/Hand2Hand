@@ -274,12 +274,12 @@ La opción 1 se hace mediante la opcion "Device Manager" el menu lateral. Durant
 necesario seleccionar el modelo del celular y la versión de android (hay que descargar una imagen
 del sistema operativo si no se ha hecho previamente).
 
-![Create Virtual Device](https://github.com/nikollquinteroc/NoCountry_s15-36-kotlin/blob/feature/nikollquinteroc/readme/app/src/main/res/drawable/emulator.PNG)
+![Create Virtual Device](https://github.com/nikollquinteroc/NoCountry_s15-36-kotlin/blob/main/app/src/main/res/drawable/emulator.PNG)
 
 La opción 2 se realiza mediante la lista desplegable de "Available devices" del menu superior y
 central.
 
-![Connect Device](https://github.com/nikollquinteroc/NoCountry_s15-36-kotlin/blob/feature/nikollquinteroc/readme/app/src/main/res/drawable/device.PNG)
+![Connect Device](https://github.com/nikollquinteroc/NoCountry_s15-36-kotlin/blob/main/app/src/main/res/drawable/device.png)
 
 ## Base de datos
 
